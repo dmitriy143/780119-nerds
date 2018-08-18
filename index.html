@@ -31,21 +31,21 @@
       	    скрупулезно.</p>
       	    <p class="slider-text">Математически выверенный дизайн
       	    для вашего сайта или мобильного приложения.</p>
-      	    <a class="button" href="#">УЗНАТЬ БОЛЬШЕ</a>
+      	    <a class="button" href="#">узнать больше</a>
       	  </li>
           <li class="feature-item">
             <p class="slider">Любим математику
             как никто другой</p>
 		    <p class="slider-text">Никакого креатива, только математические формулы
 		    для расчета идеальных пропорций.</p>
-		    <a class="button" href="#">УЗНАТЬ БОЛЬШЕ</a>
+		    <a class="button" href="#">узнать больше</a>
           </li>
     	  <li class="feature-item">
     	    <p class="slider">Только ночь,
     		только хардкор</p>
     	    <p class="slider-text">Работать днем, как все? Мы против этого.
     	    Ближе к полуночи работа только начинается.</p>
-    	    <a class="button" href="#">УЗНАТЬ БОЛЬШЕ</a>
+    	    <a class="button" href="#">узнать больше</a>
     	  </li>
         </ul>
         <div class="controls"></div>
@@ -109,16 +109,16 @@
       <section class="logo">
         <ul>
           <li>
-            <a href="#"><img src="img/logo-1.png" width="199" height="68" alt="html academy"></a>
-            </li>
-          <li>
-            <a href="#"><img src="img/logo-2.png" width="209" height="90" alt="BORODINSKI"></a>
+            <a href="#" aria-label="логотип html academy"><img src="img/logo-1.png" width="199" height="68" alt="html academy"></a>
           </li>
           <li>
-            <a href="#"><img src="img/logo-3.png" width="185" height="52" alt="PINK"></a>
+            <a href="#" aria-label="логотип BORODINSKI"><img src="img/logo-2.png" width="209" height="90" alt="BORODINSKI"></a>
+          </li>
+          <li>
+            <a href="#" aria-label="логотип PINK"><img src="img/logo-3.png" width="185" height="52" alt="PINK"></a>
           </li>
           <li>  
-            <a href="#"><img src="img/logo-4.png" width="173" height="84" alt="MiSHKA"></a>
+            <a href="#" aria-label="логотип MiSHKA"><img src="img/logo-4.png" width="173" height="84" alt="MiSHKA"></a>
           </li>
         </ul>
       </section>
@@ -136,9 +136,9 @@
         </div>
         <div class="footer-bottom">   
           <ul class="social_icon">
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+            <li><a href="#" aria-label="Смотрите нас в контакте"></a></li>
+            <li><a href="#" aria-label="Смотрите нас в фейсбуке"></a></li>
+            <li><a href="#" aria-label="Смотрите нас в инстаграмме"></a></li>
           </ul>
           <p class="footer-slogan">Давайте дружить, это выгодно!</p>
           <p class="footer-slogan-text">Скидка 10% для друзей из социальных сетей.</p>
@@ -146,9 +146,19 @@
       </footer>
       <section class="modal">
         <div class="modal__block">
-	      <!--здесь будет форма-->
-	      <button type="button"><span class="visually-hidden">Закрыть окно</span></button>
-	    </div>
-	  </section>  
+          <h2>Напишите нам</h2>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="text" id="name" required placeholder="Имя Фамилия">
+            <label for="email">Ваш e-mail:</label>
+            <input type="email" name="email" id="email" required placeholder="email@example.com"><br>
+            <label for="letter">Текст письма:</label>
+            <textarea cols="#" rows="#" id="letter" placeholder="В свободной форме"></textarea>
+            <button type="submit" name="submit" class="button button-modal">отправить</button>
+      <!--здесь будет форма-->
+            <button type="button"><span class="visually-hidden">Закрыть окно</span></button>
+          </form>
+	      </div>
+	    </section>  
   </body>
 </html>
