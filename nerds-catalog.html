@@ -73,7 +73,9 @@
             </li>
           </ul>
         </fieldset>
+        <button type="submit" class="button button-filter">показать</button>
     	<!-- Здесь будет форма -->
+      </form>
     </section>
     <section>
       <h2 class="visually-hidden">Готовые шаблоны</h2>
@@ -82,8 +84,8 @@
     	  <li><a class="sorting-price sorting-active" href="#">По цене</a></li>
     	  <li><a class="sorting-price" href="#">По типу</a></li>
     	  <li><a class="sorting-price" href="#">По названию</a></li>
-        <li><a class="sorting-arrow sorting-arrow-active" href="#" aria-label="сортировка стрелка вверх"></a></li>
-        <li><a class="sorting-arrow" href="#" aria-label="сортировка стрелка вниз"></a></li>
+        <li><a class="sorting-arrow sorting-arrow-active" href="#" aria-label="сортировать от большего к меньшему"></a></li>
+        <li><a class="sorting-arrow" href="#" aria-label="сортировать от меньшего к большему"></a></li>
       </ul>
       <ul class="card-list">
         <li class="card-item">
@@ -92,7 +94,7 @@
     	    <h3><a href="#">Sedona</a></h3>
 			    <p>Информационный сайт
 			    для туристов</p>
-			    <button type="submit" class="button button-card">9 900 РУБ</button>
+			    <a href=# class="button button-card">9 900 РУБ</a>
     	  </div>
     	</li>
     	<li class="card-item">
@@ -101,7 +103,7 @@
     	    <h3><a href="#">Pink App</a></h3>
     	    <p>Продуктовый лендинг
     	    приложения для iOS и Android</p>
-    	    <button type="submit" class="button button-card">9 900 РУБ</button>
+    	    <a href=# class="button button-card">9 900 РУБ</a>
     	  </div>
     	</li>
     	<li class="card-item">
@@ -110,7 +112,7 @@
     	  	<h3><a href="#">Barbershop</a></h3>
     	  	<p>Сайт салона красоты.
     	  	Для мужчин, да.</p>
-    	  	<button type="submit" class="button button-card">9 900 РУБ</button>
+    	  	<a href=# class="button button-card">9 900 РУБ</a>
     	  </div>
     	</li>
     	<li class="card-item">
@@ -119,7 +121,7 @@
     	  	<h3><a href="#">MISHKA</a></h3>
     	  	<p>Интернет-магазин
     	  	вязаных игрушек</p>
-    	  	<button type="submit" class="button button-card">9 900 РУБ</button>
+    	  	<a href=# class="button button-card">9 900 РУБ</a>
     	  </div>
     	</li>
     	<li class="card-item">
@@ -128,7 +130,7 @@
 		  	<h3><a href="#">A Plus</a></h3>
 		  	<p>Лендинг курсов повышения
 		  	квалификации</p>
-		  	<button type="submit" class="button button-card">9 900 РУБ</button>
+		  	<a href=# class="button button-card">9 900 РУБ</a>
 		  </div>
     	</li>
     	<li class="card-item">
@@ -137,7 +139,7 @@
     	    <h3><a href="#">КВАСТ</a></h3>
     	  	<p>Промо-сайт производителя
     	  	крафтового кваса</p>
-    	  	<button type="submit" class="button button-card">9 900 РУБ</button>
+    	  	<a href=# class="button button-card">9 900 РУБ</a>
     	  </div>
     	</li>
     	</ul>
@@ -172,6 +174,7 @@
     </footer>
     <section class="modal">
       <div class="modal__block">
+        <h2>Напишите нам</h2>
         <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
           <label for="name">Ваше имя:</label>
           <input type="text" name="text" id="name" required placeholder="Имя Фамилия">
