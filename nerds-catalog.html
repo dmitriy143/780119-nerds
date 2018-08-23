@@ -3,6 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Nerds-catalog</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
@@ -27,9 +30,9 @@
       <h2 class="visually-hidden">Фильтр шаблонов</h2>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
-          <legend>стоимость:</legend>
+          <legend>Стоимость:</legend>
           <input type="range" name="range" id="range" min="0" max="15000">
-          <label for="range">от <span>0</span> до <span>15 000</span></label>
+          <label class="filter-range" for="range">от <span>0</span> до <span>15 000</span></label>
         </fieldset>
         <fieldset>
           <legend>Сетка:</legend>
@@ -49,7 +52,7 @@
           </ul>
         </fieldset>
         <fieldset>
-          <legend>особенности:</legend>
+          <legend>Особенности:</legend>
           <ul>
             <li>
               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slide" id="filter-slide" checked>
@@ -77,7 +80,7 @@
     	<!-- Здесь будет форма -->
       </form>
     </section>
-    <section>
+    <section class="section-sorting">
       <h2 class="visually-hidden">Готовые шаблоны</h2>
       <h3>Сортировать:</h3>
       <ul class="sorting">
@@ -157,9 +160,10 @@
         <img src="img/map.jpg" width="1440" height="417" alt="карта">
     	<div class="adress">
     	  <p>NЁRDS DESIGN STUDIO</p>
-    	  <p>191186, Санкт-Петербург,
+    	  <p class="address-slogan">191186, Санкт-Петербург,
     	  ул. Б. Конюшенная, д. 19/8</p>
-    	  <a href="#">Напишите нам</a>
+        <p class="address-phone">тел. +7 (812) 275-75-75</p>
+    	  <a class="button button-footer" href="#">Напишите нам</a>
     	</div>
       </div>
       <div class="footer-bottom">   

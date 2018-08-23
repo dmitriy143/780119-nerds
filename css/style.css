@@ -1,0 +1,225 @@
+/*font-family: 'Roboto', Arial, sans-serif;*/
+body{
+  margin:0;
+  padding:0;
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size:16px;
+	font-weight:400; /* Regular */
+	color:#000000;
+	background-color:#ffffff;
+}
+.visually-hidden{   /* скрываем заголовки */
+	position:absolute;
+	width:100px;
+	height:1px;
+	margin:-1px;
+	border:0;
+	padding:0;
+	clip:rect(0 0 0 0);
+	overflow:hidden;
+}
+a {
+	text-decoration:none;
+}
+/* навигация */
+.main-header,
+.features {
+	background-color:#eeeeee; /* bg для навигации и слайдеров */
+}
+.main-navigation {
+  font-weight:500; /* Medium */
+  line-height:30px;
+  color:#000000;
+  text-transform: uppercase;
+}
+.site-navigation,
+.user {
+	list-style:none;
+}
+.site-navigation a,
+.user a {
+  color: #000000;
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user a:hover,
+.user a:focus {
+	color:#fb565a;
+}
+.site-navigation a:active,
+.user a:active {
+	color:#a6a6a6;
+}
+.site-navigation-current { /* активный, находящийся на странице */
+	color:#000000;
+	border-bottom:2px solid #fb565a;
+	padding-bottom:6px;
+}
+.features-list {
+	list-style:none;
+}
+/* слайдеры */
+.slider {
+	font-size:55px;
+	line-height:55px;
+	font-weight:500; /* Medium */
+}
+.slider-text {
+	line-height:24px;
+	
+}
+/* кнопки (общие стили) */
+.button {
+  font: inherit;
+  line-height:18px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #fb565a;
+  border: none;
+}
+.button:hover,
+.button:focus {
+	background-color: #e74246;
+}
+.button:active {
+	color:#e37376;
+	background-color: #d7373b;
+}
+/* секция "продукция" */
+.production_list {
+	list-style:none;
+}
+.production_list h3 {
+	font-size:24px;
+	line-height:30px;
+	font-weight:700; /* bold */
+}
+.production_list p {
+	line-height:24px;
+	
+}
+/* секция "О нас" */
+.slogan {
+	font-size:45px;
+	line-height:45px;
+	font-weight:500; /* Medium */
+}
+.slogan-text {
+	line-height:24px;
+}
+.about_us ul {
+	list-style: none;
+}
+.about_us h3 {
+	line-height:24px;
+	font-weight:700; /* bold */
+	text-transform:uppercase;
+}
+.about_us li {
+	font-size: 16px;
+	line-height:24px;
+}
+.about_us-column-right td {
+	font-size: 45px;
+	line-height: 10.6px;
+	font-weight:700; /* bold */
+}
+.about_us-column-right th {
+	line-height: 18px;
+}
+/* footer */
+.address h3 {
+	font-size:18px;
+	line-height: 30px;
+	font-weight:700; /* bold */
+}
+.address p {
+	color:#666666;
+	line-height: 18px;
+}
+.footer-slogan {
+	font-size:36px;
+	line-height: 36px;
+	font-weight:700; /* bold */
+}
+.footer-slogan-text {
+	line-height: 22px;
+}
+/*modal__block*/
+.modal__block h2 {
+	font-size:45px;
+	line-height: 45px;
+	font-weight:500; /* Medium */
+}
+.modal__block label {
+	font-size:16px;
+	line-height: 18px;
+	font-weight:700; /* bold */
+} 
+.modal-form input[type="text"],
+.modal-form input[type="email"],
+.modal-form textarea {
+  font: inherit;
+  border: 2px solid #d7dcde;
+}
+/* каталог */
+/* формы */
+.container h1 {
+	font-size:55px;
+	line-height:55px;
+	font-weight:500; /* Medium */
+}
+.filter ul {
+	list-style:none;
+}
+.filter fieldset {
+	border:none;
+}
+.filter legend {
+	font-size:18px;
+	line-height: 30px;
+	font-weight:500; /* Medium */
+	text-transform: uppercase;
+}
+.filter label {
+	font-size:16px;
+	line-height: 20px;
+	font-weight:400; /* Regular */
+	color:#283136;
+}
+.filter .filter-range {
+	line-height: 22px;
+}
+/* сортировка */
+.section-sorting h3 {
+	font-size:18px;
+	line-height: 18px;
+	font-weight:700; /* bold */
+	text-transform: uppercase;
+}
+.section-sorting ul {
+	list-style:none;
+}
+.sorting-price {
+  font-size:14px;
+	line-height: 18px;
+	font-weight:400; /* Regular */
+	text-transform: uppercase;
+	color:rgba(0, 0, 0, 0.3);
+}
+.sorting-active {
+	color:#000000;
+}
+.card-item h3 a {
+	font-size:18px;
+	line-height: 30px;
+	font-weight:700; /* bold */
+	text-transform: uppercase;
+	color:#000000;
+}
+.card-item p {
+	line-height: 18px;
+	color:#666666;
+}
