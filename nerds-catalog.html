@@ -9,7 +9,7 @@
 </head>
 <body>
   <header class="main-header">
-  	<nav class="main-navigation">
+  	<nav class="main-navigation container">
   	  <a class="main-header-logo" href="index.html">
   	    <img src="img/nerds-logo.svg" width="160" height="65" alt="Дизайн-студия Nerds">
       </a>
@@ -24,8 +24,9 @@
     </ul>
     </nav>
   </header>
-  <main class="container">
-    <h1>Магазин готовых шаблонов</h1>
+  <main>
+    <h1 class="header-text">Магазин готовых шаблонов</h1>
+    <div class="container-catalog">
     <section class="value">
       <h2 class="visually-hidden">Фильтр шаблонов</h2>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -80,6 +81,7 @@
     	<!-- Здесь будет форма -->
       </form>
     </section>
+    
     <section class="section-sorting">
       <h2 class="visually-hidden">Готовые шаблоны</h2>
       <h3>Сортировать:</h3>
@@ -153,27 +155,32 @@
     	  <li class="pagination-item"><a href="#">следующая</a></li>
     	</ul>
     </section>
+  </div>
   </main>
     <footer class="main-footer">
 	  <h2 class="visually-hidden">наш адрес</h2>
       <div class="footer-top">
         <img src="img/map.jpg" width="1440" height="417" alt="карта">
-    	<div class="adress">
-    	  <p>NЁRDS DESIGN STUDIO</p>
-    	  <p class="address-slogan">191186, Санкт-Петербург,
-    	  ул. Б. Конюшенная, д. 19/8</p>
-        <p class="address-phone">тел. +7 (812) 275-75-75</p>
-    	  <a class="button button-footer" href="#">Напишите нам</a>
-    	</div>
+        <div class="container">
+    	    <div class="address">
+    	      <h3>NЁRDS DESIGN STUDIO</h3>
+    	      <p class="address-slogan">191186, Санкт-Петербург,
+    	      ул. Б. Конюшенная, д. 19/8</p>
+            <p class="address-phone">тел. +7 (812) 275-75-75</p>
+    	      <a class="button button-footer" href="#">Напишите нам</a>
+    	    </div>
+        </div>
       </div>
-      <div class="footer-bottom">   
-    	<ul class="social_icon">
-    	  <li><a href="#" aria-label="Смотрите нас в контакте"></a></li>
-    	  <li><a href="#" aria-label="Смотрите нас в фейсбуке"></a></li>
-    	  <li><a href="#" aria-label="Смотрите нас в инстаграмме"></a></li>
-    	</ul>
-    	<p class="footer-slogan">Давайте дружить, это выгодно!</p>
-    	<p class="footer-slogan-text">Скидка 10% для друзей из социальных сетей.</p>
+      <div class="footer-bottom container">   
+    	  <ul class="social_icon">
+    	    <li><a href="#" aria-label="Смотрите нас в контакте"></a></li>
+    	    <li><a href="#" aria-label="Смотрите нас в фейсбуке"></a></li>
+    	    <li><a href="#" aria-label="Смотрите нас в инстаграмме"></a></li>
+    	  </ul>
+        <div class="buttom-slogan">
+    	    <p class="footer-slogan">Давайте дружить, это выгодно!</p>
+    	    <p class="footer-slogan-text">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </div>  
     </footer>
     <section class="modal">
