@@ -30,12 +30,21 @@
     <section class="value">
       <h2 class="visually-hidden">Фильтр шаблонов</h2>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset>
+        <fieldset class="filter-price">
           <legend>Стоимость:</legend>
-          <input type="range" name="range" id="range" min="0" max="15000">
-          <label class="filter-range" for="range">от <span>0</span> до <span>15 000</span></label>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+            <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+          </div>
         </fieldset>
-        <fieldset>
+        <fieldset class="filter-grid">
           <legend>Сетка:</legend>
           <ul>
             <li class="filter-option">
@@ -52,26 +61,26 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="filter-feature">
           <legend>Особенности:</legend>
           <ul>
-            <li>
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slide" id="filter-slide" checked>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
               <label for="filter-slide">Слайдер</label>
             </li>
-            <li>
+            <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="block-advantages" id="filter-block-advantages">
               <label for="filter-block-advantages">Блок преимуществ</label>
             </li>
-            <li>
+            <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
               <label for="filter-news">Новости</label>
             </li>
-            <li>
+            <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
               <label for="filter-gallery">Галерея</label>
             </li>
-            <li>
+            <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket-name" id="filter-basket-name">
               <label for="filter-basket-name">Корзина</label>
             </li>
@@ -84,6 +93,7 @@
     
     <section class="section-sorting">
       <h2 class="visually-hidden">Готовые шаблоны</h2>
+      <div class="section-header">
       <h3>Сортировать:</h3>
       <ul class="sorting">
     	  <li><a class="sorting-price sorting-active" href="#">По цене</a></li>
@@ -92,12 +102,13 @@
         <li><a class="sorting-arrow sorting-arrow-active" href="#" aria-label="сортировать от большего к меньшему"></a></li>
         <li><a class="sorting-arrow" href="#" aria-label="сортировать от меньшего к большему"></a></li>
       </ul>
+      </div>
       <ul class="card-list">
         <li class="card-item">
           <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
     	  <div class="hover-block">
     	    <h3><a href="#">Sedona</a></h3>
-			    <p>Информационный сайт
+			    <p>Информационный сайт<br>
 			    для туристов</p>
 			    <a href=# class="button button-card">9 900 РУБ</a>
     	  </div>
@@ -106,7 +117,7 @@
     	  <img src="img/img-pink.jpg" width="360" height="576" alt="Pink App">
     	  <div class="hover-block">
     	    <h3><a href="#">Pink App</a></h3>
-    	    <p>Продуктовый лендинг
+    	    <p>Продуктовый лендинг<br>
     	    приложения для iOS и Android</p>
     	    <a href=# class="button button-card">9 900 РУБ</a>
     	  </div>
@@ -115,7 +126,7 @@
     	  <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
     	  <div class="hover-block">
     	  	<h3><a href="#">Barbershop</a></h3>
-    	  	<p>Сайт салона красоты.
+    	  	<p>Сайт салона красоты.<br>
     	  	Для мужчин, да.</p>
     	  	<a href=# class="button button-card">9 900 РУБ</a>
     	  </div>
@@ -124,7 +135,7 @@
     	  <img src="img/img-mishka.jpg" width="360" height="576" alt="MISHKA">
     	  <div class="hover-block">
     	  	<h3><a href="#">MISHKA</a></h3>
-    	  	<p>Интернет-магазин
+    	  	<p>Интернет-магазин<br>
     	  	вязаных игрушек</p>
     	  	<a href=# class="button button-card">9 900 РУБ</a>
     	  </div>
@@ -133,7 +144,7 @@
     	  <img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
 		  <div class="hover-block">
 		  	<h3><a href="#">A Plus</a></h3>
-		  	<p>Лендинг курсов повышения
+		  	<p>Лендинг курсов повышения<br>
 		  	квалификации</p>
 		  	<a href=# class="button button-card">9 900 РУБ</a>
 		  </div>
@@ -142,7 +153,7 @@
     	  <img src="img/img-kvast.jpg" width="360" height="576" alt="КВАСТ">
     	  <div class="hover-block">
     	    <h3><a href="#">КВАСТ</a></h3>
-    	  	<p>Промо-сайт производителя
+    	  	<p>Промо-сайт производителя<br>
     	  	крафтового кваса</p>
     	  	<a href=# class="button button-card">9 900 РУБ</a>
     	  </div>
@@ -164,7 +175,7 @@
         <div class="container">
     	    <div class="address">
     	      <h3>NЁRDS DESIGN STUDIO</h3>
-    	      <p class="address-slogan">191186, Санкт-Петербург,
+    	      <p class="address-slogan">191186, Санкт-Петербург,<br>
     	      ул. Б. Конюшенная, д. 19/8</p>
             <p class="address-phone">тел. +7 (812) 275-75-75</p>
     	      <a class="button button-footer" href="#">Напишите нам</a>
@@ -173,9 +184,21 @@
       </div>
       <div class="footer-bottom container">   
     	  <ul class="social_icon">
-    	    <li><a href="#" aria-label="Смотрите нас в контакте"></a></li>
-    	    <li><a href="#" aria-label="Смотрите нас в фейсбуке"></a></li>
-    	    <li><a href="#" aria-label="Смотрите нас в инстаграмме"></a></li>
+    	    <li>
+            <a href="#" aria-label="Смотрите нас в контакте">
+              <img src="img/vk-icon.svg" width="26" height="15" alt="в контакте"> 
+            </a>
+          </li>
+    	    <li>
+            <a href="#" aria-label="Смотрите нас в фейсбуке">
+              <img src="img/fb-icon.svg" width="12" height="22" alt="в фейсбуке">
+            </a>
+          </li>
+    	    <li>
+            <a href="#" aria-label="Смотрите нас в инстаграмме">
+              <img src="img/insta-icon.svg" width="21" height="21" alt="в инстаграмме">
+            </a>
+          </li>
     	  </ul>
         <div class="buttom-slogan">
     	    <p class="footer-slogan">Давайте дружить, это выгодно!</p>
@@ -187,17 +210,22 @@
       <div class="modal__block">
         <h2>Напишите нам</h2>
         <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="modal-item">
           <label for="name">Ваше имя:</label>
-          <input type="text" name="text" id="name" required placeholder="Имя Фамилия">
+          <input type="text" name="text" id="name" placeholder="Имя Фамилия">
+          </div>
+          <div class="modal-item">
           <label for="email">Ваш e-mail:</label>
-          <input type="email" name="email" id="email" required placeholder="email@example.com"><br>
+          <input type="email" name="email" id="email" placeholder="email@example.com">
+          </div>
+          <div class="modal-item">
           <label for="letter">Текст письма:</label>
           <textarea cols="#" rows="#" id="letter" placeholder="В свободной форме"></textarea>
+          </div>
           <button type="submit" name="submit" class="button button-modal">отправить</button>
-      <!--здесь будет форма-->
-          <button type="button"><span class="visually-hidden">Закрыть окно</span></button>
         </form>
-      </div>
-    </section>
+        <button class="modal-close" type="button"><span class="visually-hidden">Закрыть окно</span></button>
+    </div>
+  </section>
 </body>
 </html>
