@@ -59,11 +59,11 @@ a {
 	width:160px;
 	height:65px;
 }
-.main-header-logo:hover img,
-.main-header-logo:focus img {
+.main-header-logo[href]:hover img,
+.main-header-logo[href]:focus img {
 	opacity: 0.8;
 }
-.main-header-logo:active img {
+.main-header-logo[href]:active img {
 	opacity: 0.3;
 }
 .site-navigation,
@@ -114,13 +114,13 @@ a {
 .site-navigation li:last-child a{
 	margin-right:0;
 }
-.site-navigation a:hover,
-.site-navigation a:focus,
-.user a:hover,
-.user a:focus {
+.site-navigation a[href]:hover,
+.site-navigation a[href]:focus,
+.user a[href]:hover,
+.user a[href]:focus {
 	color:#fb565a;
 }
-.site-navigation a:active,
+.site-navigation a[href]:active,
 .user a:active {
 	color:#a6a6a6;
 }
@@ -504,6 +504,9 @@ margin-bottom:0;
 .main-footer {
 	padding:80px 0 0 0;
 }
+.main-footer-catalog {
+	padding:59px 0 0 0;
+}
 .footer-top {
 position:relative;
 }
@@ -771,6 +774,9 @@ position:relative;
 .modal-close:active:after {
 	background-color: #ffeeee;
 }
+.modal-show {
+  display: block;
+}
 /* каталог */
 .container-catalog{          /* описываем класс container-catalog*/
 	width:1160px;
@@ -782,7 +788,7 @@ position:relative;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
-/* формы */
+
 /* формы */
 
 .header-text  {
@@ -923,6 +929,14 @@ position:relative;
   border-radius: 50%;
   background-color:#a6a6a6;
 }
+.filter-input-radio + label:hover:before{
+	content:"";
+	border-color:#4d4d4d;
+}
+.filter-input-radio:checked + label:hover::after {
+  content: "";
+  background-color:#4d4d4d;
+}
 /* особенности */
 .filter .filter-feature {
 	margin-bottom:30px;
@@ -940,6 +954,9 @@ position:relative;
 	border:2px solid #a6a6a6;
 	border-radius: 3px;
 }
+.filter-input-checkbox + label:hover:before {
+	border-color:#4d4d4d;
+}
 .filter-input-checkbox:checked + label:before {
 	content:"";
 	display:none;
@@ -956,7 +973,9 @@ position:relative;
   background-repeat: no-repeat;
   background-position: 0 0;
  }
-
+.filter-input-checkbox:checked + label:hover::after {
+ 	background:url("../img/checkbox-on — копия.svg");
+ }
  .button-filter {
  	padding-right: 89px;
  	padding-left: 89px;
@@ -990,17 +1009,13 @@ position:relative;
 	padding:4px 0 0 0;
 	list-style:none;
 }
-.sorting li {
+.sorting li:nth-child(1),
+ .sorting li:nth-child(2){
 	margin-right:26px;
-}
-.sorting li:nth-child(3) {
-	margin-right:47px;
-}
-.sorting li:nth-child(5) {
-	margin-right:0;
 }
 .sorting li:nth-child(4) {
 	margin-right:17px;
+	margin-left:auto;
 }
 .sorting-price {
   font-size:14px;
@@ -1039,6 +1054,9 @@ li:nth-child(5) .sorting-arrow  {
 .sorting-arrow:active {
 	border-top-color:#231f20;
 }
+.sorting-arrow-active:hover {
+	border-top-color:#231f20;
+}
 .card-list {                /* flex */
 	display: flex;
 	justify-content: space-between;
@@ -1066,12 +1084,16 @@ li:nth-child(5) .sorting-arrow  {
 }
 .hover-block {
 	position:absolute;
+	display:none;
 	width:360px;
 	bottom:4px;
 	text-align:center;
 	background:#eeeeee;
 	padding-top:26px;
 	padding-bottom:44px;
+}
+.card-item:hover .hover-block {
+	display:block;
 }
 .hover-block h3 {
 	text-align:center;
@@ -1099,7 +1121,7 @@ li:nth-child(5) .sorting-arrow  {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  margin: 28px 0 -21px 0;
+  margin: 28px 0 0 0;
   list-style: none;
 }
 .pagination-list li {
@@ -1126,4 +1148,11 @@ li:nth-child(5) .sorting-arrow  {
 	background-color:#fff;
 	border: 3px solid #eeeeee;
 	padding:13px 18px;
+}
+.pagination-item a[href]:hover {
+	background-color:#dfdfdf;
+}
+.pagination-item a[href]:active {
+	color:rgba(0, 0, 0, 0.3);
+	background-color:#d5d5d5;
 }
