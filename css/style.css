@@ -954,7 +954,8 @@ position:relative;
 	border:2px solid #a6a6a6;
 	border-radius: 3px;
 }
-.filter-input-checkbox + label:hover:before {
+.filter-input-checkbox + label:hover:before,
+.filter-input-checkbox:focus + label:before {
 	border-color:#4d4d4d;
 }
 .filter-input-checkbox:checked + label:before {
@@ -973,9 +974,15 @@ position:relative;
   background-repeat: no-repeat;
   background-position: 0 0;
  }
-.filter-input-checkbox:checked + label:hover::after {
+.filter-input-checkbox:checked + label:hover::after,
+ .filter-input-checkbox:focus + label::after {
  	background:url("../img/checkbox-on — копия.svg");
  }
+ .filter-input:hover + label,
+.filter-input:focus + label {
+  color: #000000;
+}
+
  .button-filter {
  	padding-right: 89px;
  	padding-left: 89px;
