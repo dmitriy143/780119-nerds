@@ -152,9 +152,7 @@ a {
   width: 18px;
   height: 18px;
   padding:8px;
-
   border-radius:50%;
-  cursor:pointer;
 }
 .controls i:after{
 	content:"";
@@ -167,6 +165,7 @@ a {
   
   background: #ffffff;
   border-radius:50%;
+  cursor:pointer;
 }
 .controls .active:before {
   content: "";
@@ -195,10 +194,9 @@ a {
 	background-image:url("../img/slide10.png");
 	background-repeat: no-repeat;
 	background-position: 400px bottom;
-	display:none;
 }
-.feature-item:nth-child(1){
-	display:block;
+.feature-item-none {
+	display:none;
 }
 .feature-item:nth-child(2) {
 	background-image:url("../img/slide20.png");
