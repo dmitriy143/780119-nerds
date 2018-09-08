@@ -29,29 +29,29 @@ controls3.addEventListener("click", function (evt) {
 	controls3.classList.add("active");
 	controls1.classList.remove("active");
 	controls2.classList.remove("active");
-	slider3.classList.add("modal-show");
+	slider3.classList.add("feature-item-show");
   slider1.classList.add("feature-item-none");
-  slider1.classList.remove("modal-show");
-  slider2.classList.remove("modal-show");
+  slider1.classList.remove("feature-item-show");
+  slider2.classList.remove("feature-item-show");
 });
 controls2.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	controls2.classList.add("active");
 	controls1.classList.remove("active");
 	controls3.classList.remove("active");
-	slider2.classList.add("modal-show");
+	slider2.classList.add("feature-item-show");
   slider1.classList.add("feature-item-none");
-  slider1.classList.remove("modal-show");
-  slider3.classList.remove("modal-show");
+  slider1.classList.remove("feature-item-show");
+  slider3.classList.remove("feature-item-show");
 });
 controls1.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	controls1.classList.add("active");
 	controls2.classList.remove("active");
 	controls3.classList.remove("active");
-	slider1.classList.add("modal-show");
-  slider2.classList.remove("modal-show");
-  slider3.classList.remove("modal-show");
+	slider1.classList.add("feature-item-show");
+  slider2.classList.remove("feature-item-show");
+  slider3.classList.remove("feature-item-show");
 });
 
 
@@ -69,13 +69,14 @@ link.addEventListener("click", function (evt) {
 close.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	popup.classList.remove("modal-show");
+	popup.classList.remove("modal-error");
 });
 
 
 form.addEventListener("submit", function (evt) {
    if (!login.value || !email.value) {
     evt.preventDefault();
-    console.log("Нужно ввести логин и пароль");
+    popup.classList.toggle("modal-error");
   } else {
       if (isStorageSupport) {
         localStorage.setItem("login", login.value);

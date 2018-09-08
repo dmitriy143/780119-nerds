@@ -198,6 +198,9 @@ a {
 .feature-item-none {
 	display:none;
 }
+.feature-item-show {
+	display:block;
+}
 .feature-item:nth-child(2) {
 	background-image:url("../img/slide20.png");
 	background-position: 448px bottom;
@@ -512,6 +515,10 @@ position:relative;
 	display: block;
 	margin:0 auto;
 }
+.footer-top iframe {
+	display: block;
+	margin:0 auto;
+}
 
 .address {
 	position:absolute;
@@ -772,8 +779,50 @@ position:relative;
 .modal-close:active:after {
 	background-color: #ffeeee;
 }
+
+@keyframes bounce {
+	0%{
+		transform:scale(0) translateX(-1200px);
+	}
+	60%{
+		transform: scale(1) translateX(15px);
+	}
+	80%{
+		transform: scale(1) translateX(-5px);
+	}
+	90%{
+		transform: scale(1) translateX(3px);
+	}
+	100%{
+		transform: scale(1) translateX(0px);
+	}
+}
+
+@keyframes shake {
+	0%{
+  	transform:scale(1);
+  }
+  25%{
+  	transform:scale(0.95);
+  }
+  50%{
+  	transform:scale(0.98);
+  }
+  75%{
+  	transform:scale(0.95);
+  }
+  100%{
+  	transform:scale(1);
+  }
+}
+
 .modal-show {
   display: block;
+  animation: bounce 0.6s;
+  animation-fill-mode: forwards;
+}
+.modal-error {
+  animation: shake 0.3s;
 }
 /* каталог */
 .container-catalog{          /* описываем класс container-catalog*/
@@ -979,6 +1028,19 @@ position:relative;
  .filter-input:hover + label,
 .filter-input:focus + label {
   color: #000000;
+}
+.filter-input-checkbox:disabled + label:before{
+	border-color:#ededed;
+}
+.filter-input-checkbox:disabled + label {
+	color:rgba(40, 49, 54, 0.3);
+ }
+
+.filter-input-radio:disabled + label {
+	color:rgba(40, 49, 54, 0.3);
+}
+.filter-input-radio:disabled + label:before {
+	border-color:#ededed;
 }
 
  .button-filter {
