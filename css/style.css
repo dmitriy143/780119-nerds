@@ -108,11 +108,15 @@ a {
   padding-bottom:10px;
   padding-top:26px;
 }
-.site-navigation a{
+.site-navigation li{
 	margin-right:46px;
 }
-.site-navigation li:last-child a{
+.site-navigation li:nth-child(3) {
 	margin-right:0;
+}
+.site-navigation li:last-child {
+	margin-right:0;
+	margin-left:auto;
 }
 .site-navigation a[href]:hover,
 .site-navigation a[href]:focus,
@@ -510,14 +514,19 @@ margin-bottom:0;
 }
 .footer-top {
 position:relative;
+width:1440px;
+margin:0 auto;
 }
 .footer-top img {
 	display: block;
-	margin:0 auto;
-}
+	position: absolute;
+	top:0;
+	z-index: -1;
+ }
 .footer-top iframe {
 	display: block;
 	margin:0 auto;
+	border:0;
 }
 
 .address {
@@ -1023,7 +1032,7 @@ position:relative;
  }
 .filter-input-checkbox:checked + label:hover::after,
  .filter-input-checkbox:focus + label::after {
- 	background:url("../img/checkbox-on — копия.svg");
+ 	background:url("../img/checkbox-on - hover.svg");
  }
  .filter-input:hover + label,
 .filter-input:focus + label {
@@ -1161,6 +1170,10 @@ li:nth-child(5) .sorting-arrow  {
 }
 .card-item:hover .hover-block {
 	display:block;
+}
+.hover-block-overflow {
+	height: 100%;
+	overflow-y: auto;
 }
 .hover-block h3 {
 	text-align:center;
