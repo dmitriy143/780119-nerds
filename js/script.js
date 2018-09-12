@@ -61,7 +61,7 @@ link.addEventListener("click", function (evt) {
 
 	if (storage) {
       login.value = storage;
-      password.focus();
+      email.focus();
     } else {
       login.focus();
     }
@@ -76,7 +76,8 @@ close.addEventListener("click", function (evt) {
 form.addEventListener("submit", function (evt) {
    if (!login.value || !email.value) {
     evt.preventDefault();
-    popup.classList.toggle("modal-error");
+    popup.classList.add("modal-error");
+    popup.classList.toggle("modal-error-toggle");
   } else {
       if (isStorageSupport) {
         localStorage.setItem("login", login.value);
@@ -91,3 +92,39 @@ window.addEventListener("keydown", function (evt) {
       }
     }
   });
+
+controls2.addEventListener("keydown", function (evt) {
+	if (evt.keyCode === 32 || evt.keyCode === 13) {
+      evt.preventDefault();
+	controls2.classList.add("active");
+	controls1.classList.remove("active");
+	controls3.classList.remove("active");
+	slider2.classList.add("feature-item-show");
+  slider1.classList.add("feature-item-none");
+  slider1.classList.remove("feature-item-show");
+  slider3.classList.remove("feature-item-show");
+}
+});
+controls1.addEventListener("keydown", function (evt) {
+	if (evt.keyCode === 32 || evt.keyCode === 13) {
+      evt.preventDefault();
+	controls1.classList.add("active");
+	controls2.classList.remove("active");
+	controls3.classList.remove("active");
+	slider1.classList.add("feature-item-show");
+  slider2.classList.remove("feature-item-show");
+  slider3.classList.remove("feature-item-show");
+}
+});
+controls3.addEventListener("keydown", function (evt) {
+	if (evt.keyCode === 32 || evt.keyCode === 13) {
+      evt.preventDefault();
+	controls3.classList.add("active");
+	controls1.classList.remove("active");
+	controls2.classList.remove("active");
+	slider3.classList.add("feature-item-show");
+  slider1.classList.add("feature-item-none");
+  slider1.classList.remove("feature-item-show");
+  slider2.classList.remove("feature-item-show");
+}
+});

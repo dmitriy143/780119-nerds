@@ -36,7 +36,8 @@ close.addEventListener("click", function (evt) {
 form.addEventListener("submit", function (evt) {
    if (!login.value || !email.value) {
     evt.preventDefault();
-    popup.classList.toggle("modal-error");
+    popup.classList.add("modal-error");
+    popup.classList.toggle("modal-error-toggle");
   } else {
       if (isStorageSupport) {
         localStorage.setItem("login", login.value);
