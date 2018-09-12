@@ -116,7 +116,7 @@ a {
 	color: #fb565a;
 }
 .site-navigation a[href]:active,
-.user a:active {
+.user a[href]:active {
 	color: #a6a6a6;
 }
 .site-navigation .site-navigation-current { 
