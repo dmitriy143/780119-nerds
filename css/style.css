@@ -1239,6 +1239,7 @@ li:nth-child(2) .sorting-arrow  {
 	text-transform: uppercase;
 	color: #000000;
 	background-color: #eeeeee;
+	border-radius: 3px;
 }
 .pagination-item:last-child a {
 	padding-left: 76px;
@@ -1255,4 +1256,5 @@ li:nth-child(2) .sorting-arrow  {
 .pagination-item a[href]:active {
 	color: rgba(0, 0, 0, 0.3);
 	background-color: #d5d5d5;
+	box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
