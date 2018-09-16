@@ -421,7 +421,7 @@ margin-bottom: 0;
   list-style: none;
 }
 .logo li {
-  position:relative;
+  position: relative;
   width: 290px;
 }
 .logo img {
@@ -1092,7 +1092,7 @@ margin-bottom: 0;
   list-style: none;
 }
 .sorting-price {
-  font-size:14px;
+  font-size: 14px;
   line-height: 18px;
   font-weight:400; 
   text-transform: uppercase;
@@ -1230,7 +1230,7 @@ li:nth-child(2) .sorting-arrow {
   margin-right: 0;
 }
 .pagination-item a {       /* 1,2,,3 сдующая */
-  display:  block;
+  display: block;
   padding: 16px 21px;
   font-size: 16px;
   line-height: 18px;
